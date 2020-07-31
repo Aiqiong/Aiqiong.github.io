@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Mr.White</title>
+  
+  <subtitle>粉丝</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2020-07-31T05:46:46.347Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>Aiqiong</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>我的文章</title>
+    <link href="http://yoursite.com/2020/07/31/%E6%88%91%E7%9A%84%E6%96%87%E7%AB%A0/"/>
+    <id>http://yoursite.com/2020/07/31/%E6%88%91%E7%9A%84%E6%96%87%E7%AB%A0/</id>
+    <published>2020-07-31T05:32:41.000Z</published>
+    <updated>2020-07-31T05:46:46.347Z</updated>
+    
+    <content type="html"><![CDATA[<p>九幽听令,以血为誓,以冷铁为证,借尔三千阴兵,天地人神,皆可杀。</p>]]></content>
+    
+    <summary type="html">
+    
+      镇魂女鬼C位出道
+    
+    </summary>
+    
+    
+      <category term="个人博客" scheme="http://yoursite.com/categories/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
+    
+    
+      <category term="Hexo" scheme="http://yoursite.com/tags/Hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>hellow</title>
+    <link href="http://yoursite.com/2020/07/30/hellow/"/>
+    <id>http://yoursite.com/2020/07/30/hellow/</id>
+    <published>2020-07-30T15:24:17.000Z</published>
+    <updated>2020-07-30T16:35:33.385Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="各位B站大哥们，求一个点赞！"><a href="#各位B站大哥们，求一个点赞！" class="headerlink" title="各位B站大哥们，求一个点赞！"></a>各位B站大哥们，求一个点赞！</h1>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;各位B站大哥们，求一个点赞！&quot;&gt;&lt;a href=&quot;#各位B站大哥们，求一个点赞！&quot; class=&quot;headerlink&quot; title=&quot;各位B站大哥们，求一个点赞！&quot;&gt;&lt;/a&gt;各位B站大哥们，求一个点赞！&lt;/h1&gt;
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>13</title>
+    <link href="http://yoursite.com/2020/07/30/13/"/>
+    <id>http://yoursite.com/2020/07/30/13/</id>
+    <published>2020-07-30T15:11:07.000Z</published>
+    <updated>2020-07-30T15:11:07.163Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>hello,Aiqiong</title>
+    <link href="http://yoursite.com/2020/07/30/hello-Aiqiong/"/>
+    <id>http://yoursite.com/2020/07/30/hello-Aiqiong/</id>
+    <published>2020-07-30T06:40:17.000Z</published>
+    <updated>2020-07-30T07:29:09.774Z</updated>
+    
+    <content type="html"><![CDATA[<p>我来啦</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;我来啦&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://yoursite.com/2020/07/30/hello-world/"/>
+    <id>http://yoursite.com/2020/07/30/hello-world/</id>
+    <published>2020-07-30T05:44:01.473Z</published>
+    <updated>2020-07-30T05:44:01.473Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+</feed>
