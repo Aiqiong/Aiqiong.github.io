@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://aiqiong.github.io/"/>
-  <updated>2020-08-02T14:08:18.877Z</updated>
+  <updated>2020-08-03T07:51:03.424Z</updated>
   <id>http://aiqiong.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>MySQL约束</title>
+    <link href="http://aiqiong.github.io/posts/1df97176/"/>
+    <id>http://aiqiong.github.io/posts/1df97176/</id>
+    <published>2020-08-03T07:07:53.000Z</published>
+    <updated>2020-08-03T07:51:03.424Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1>三范式</h1><h2 id="什么是范式？">什么是范式？</h2><p>设计数据库表的规则</p><h2 id="范式的基本分类（面试说出名字即可）">范式的基本分类（面试说出名字即可）</h2><p>第一范式（1NF）、第二范式（2NF）、第三范式（3NF）、巴斯-科德范区分式（BCNF）、第四范式（4NF）、第五范式（5NF，又称为完美范式）。</p><h3 id="第一范式">第一范式</h3><p>数据库表的每一列都是不可分割的原子数据项——每一列不能再拆分</p><h3 id="第二范式">第二范式</h3><p>要求数据库中的每一个实例或记录必须可以被唯一的区分：</p><p>​1.一张表只描述一件事</p><p>​2.表中的每一个字段都依赖于主键</p><h3 id="第三范式">第三范式</h3><p>在2NF基础上，任何非主属性不依赖于其他非主属性</p><h1>多表查询</h1><h2 id="什么是多表查询">什么是多表查询</h2><p>同时查询多张表来获取需要的数据，但是会造成笛卡尔积现象</p><h2 id="笛卡尔积现象">笛卡尔积现象</h2><h3 id="介绍">介绍</h3><h2 id="多表查询的时候，左表的每条数据和右表的每条数据组合，这种效果描述为笛卡尔积">多表查询的时候，左表的每条数据和右表的每条数据组合，这种效果描述为笛卡尔积</h2><h3 id="清除笛卡尔积现象的影响">清除笛卡尔积现象的影响</h3><p>只有外键的值 = 逐渐的值的数据才是有用的，因此可以增加限制条件。</p><h2 id="内连接">内连接</h2><h3 id="隐式内连接">隐式内连接</h3><p>​看不到INNER、JOIN、ON关键字，条件使用where指定</p><p>​格式：</p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> 字段名 <span class="keyword">from</span> 左表，右表 <span class="keyword">where</span> 条件;</span><br></pre></td></tr></table></figure><h3 id="显示内连接">显示内连接</h3><p>​使用INNER JOIN ON语法</p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> 字段名 <span class="keyword">from</span> 左表 <span class="keyword">inner</span> <span class="keyword">join</span> 右表 <span class="keyword">on</span> 条件</span><br></pre></td></tr></table></figure><h2 id="外连接">外连接</h2><h3 id="左外连接">左外连接</h3><p>作用：用左边表的记录去匹配右边表的记录，如果符合条件额则显示，否则，显示null</p><p>格式：使用 LEFT OUTER JOIN ……ON</p><h3 id="右外连接">右外连接</h3><p>作用：用右边表的记录去匹配左边表的记录，如果符合条件额则显示，否则，显示null</p><p>格式：使用 RIGHT OUTER JOIN ……ON</p><p>注意：以前的OUTER可以省略</p><h2 id="子查询">子查询</h2><p>子查询的结果是一个值的时候，作为查询条件的时候，使用IN关键字或者‘=’</p><p>子查询的结果是单例多行的时候，作为查询条件时，使用IN关键字</p><p>子查询的结果是多行多列，作为临时表</p><p>总结：</p><p>​1.子查询结果只要是单列，肯定在WHERE后面作为条件</p><p>​2.子查询结果只要是多列，肯定在FROM后面作为表</p><h1>多表查询（高级）</h1><p>不管我们查询几张表，表连接查询会产生笛卡尔积，我们需要消除笛卡尔积，拿到真正的数据。我们需要找到表与表之间通过哪个字段关联起来的（通常是外键=主键）</p><p>多表连接查询步骤：</p><p>​1.确定要查询哪些表</p><p>​2.确定表连接条件</p><p>​3.确定查询字段</p><h1>MySQL常用函数</h1><h2 id="字符串函数">字符串函数</h2><p>CHAR_LENGTH(s):返回字符串s的字符数</p><p>CONCAT(s1,s2,……sn)字符串s1,s2等多个字符串合并唯一个字符串</p><p>LOWER(s)将字符串s的所有字母变成小写字母</p><p>UPPER(s)将字符串s的所有字母变成大写字母</p><p>SUBSTR(s,star,length)从字符串s的star位置（从1开始）截取长度为length的子字符串</p><p>TRIM(s) 去掉字符串s开始和结尾处的空格，但是中间的空格并不会被除掉。</p><h2 id="数字函数">数字函数</h2><p>RAND()返回0到1的随机数SELECT RAND();</p><p>ROUND(小数,小数点后保留小数位数)四舍五入保留几位小数</p><p>RTUNCATE（小数，小数点后保留小数位数）不会四舍五入</p><p>LEAST（expr1，expr2，……）返回列表中的最小值</p><p>GREATEST（expr1，expr2，……）返回列表中的最大值</p><h2 id="日期函数">日期函数</h2><p>NOW（）和SYSDATE（）返回系统当前日期和时间</p><p>CURDATE（）返回当前日期</p><p>CURTIME（）返回当前时间</p><p>YEAR（d）返回d中的年份</p><p>MONTH（d）返回d中的月份</p><p>DAY（d）返回d中的日</p><h2 id="高级函数">高级函数</h2><p>CURRENT_USER()返回当前用户</p><p>IFNULL（v1，v2）如果v1的值不为null，则返回v1，否则返回v2</p><p>ISNULL（expression）判断表达式是否为NULL</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla
+      
+    
+    </summary>
+    
+    
+      <category term="tech" scheme="http://Aiqiong.github.io/categories/tech/"/>
+    
+    
+      <category term="MySQL" scheme="http://Aiqiong.github.io/tags/MySQL/"/>
+    
+  </entry>
   
   <entry>
     <title>马其顿的崛起:喀罗尼亚战役</title>
